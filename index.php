@@ -17,10 +17,10 @@ class Qcm
                 echo $question->getQuestion() . '<br><br>';
                 if ($_POST['q' . $key] == $question->getNumCorrect()) {
                     echo 'Bonne réponse !' . '<br>';
-                    echo $question->getExplains().'<br><br><br>';
+                    echo $question->getExplains() . '<br><br><br>';
                 } else {
-                    echo 'Mauvaise réponse !'.'<br>';
-                    echo $question->getExplains().'<br><br><br>';
+                    echo 'Mauvaise réponse !' . '<br>';
+                    echo $question->getExplains() . '<br><br><br>';
                 }
             }
         } else {
@@ -129,4 +129,3 @@ $question2->setExplains('C\'est écrit dans la question du con');
 $qcm->addQuestion($question2);
 
 $qcm->generate();
-
